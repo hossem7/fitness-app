@@ -1,0 +1,113 @@
+$width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+
+.navbar {
+	height: inherit;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 3rem 5rem 3rem 5rem;
+    font-weight: bold;
+    .nav-logo {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: white;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: flex-start;
+        grid-gap: 60px;
+        list-style: none;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s all;
+        font-size: 1.2rem;
+    }
+    .nav-link:hover {
+        color: red;
+        cursor: pointer;
+    }
+    
+    
+}
+.hamburger{
+    display: none;
+}
+.Auth{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}  
+.signup{
+    background-color: rgb(192, 154, 105);
+    border: none;
+    border-radius: 30px;
+    color:rgb(255, 255, 255);
+    height: 3rem;
+    width: 12rem;
+    box-shadow: rgb(255, 255, 255);
+    font-size: 1em;
+}
+.nav-icon{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media  (max-width: 1150px) {
+    .navbar{
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 450px){
+            padding: 1rem;
+            .nav-logo{
+                width: inherit;
+            }
+        }
+    }
+    .nav-logo{
+        transform: scale(0.9);
+        width: inherit;
+    }
+    .nav-links {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		top: 120px;
+		left: -100%;
+		transition: 0.5s all;
+	}
+    .nav-links.active {
+		background: rgb(44, 43, 43);
+		left: 0;
+	}
+    .nav-item {
+		padding: 10px 0;
+	}
+
+	.nav-icon {
+        width: 100%;
+		display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+	}
+    .Auth{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

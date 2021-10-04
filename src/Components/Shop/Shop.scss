@@ -1,0 +1,179 @@
+$breakpoint-mobile: 768px;
+
+$breakpoint-tablet: 1024px;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+.shop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+
+    .featured{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-top: 4rem;
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            transform: scale(0.9);
+            width: inherit;
+            height: inherit;
+            padding: 0;
+            li{
+                color: rgb(241, 232, 223);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                transform: scale(0.8);
+                text-decoration: none;
+
+                img{
+                    width: inherit;
+                    height: inherit;
+                }
+                h2{
+                    font-size: 2.2em;
+                    align-items: center;
+                    align-content: center;
+                }
+                p{
+                    font-size: 1.6em;
+                    margin: 0;
+                    padding-bottom: 2rem;
+                }
+                button{
+                    background-color: rgb(192, 154, 105);
+                    border: none;
+                    border-radius: 50px;
+                    color:rgb(255, 255, 255);
+                    font-weight:700;
+                    height: 4.5rem;
+                    width: 100%;
+                    box-shadow: rgb(255, 255, 255);
+                    font-size: 1.5em;
+                }
+                
+            }
+            @media (max-width: 1400px){
+                flex-direction: column;
+                padding: 0;
+                transform: scale(0.9);
+            }
+            @media (max-width: 400px){
+                img{
+                    width: inherit;
+                    height: inherit;
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+    .success-story{
+        background-color: rgb(123, 34, 40);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        .client-div{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: center;
+            transform: scale(0.9);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            .client-description{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                }
+                button{
+                    background-color: rgb(192, 154, 105);
+                    border: none;
+                    border-radius: 30px;
+                    color:rgb(255, 255, 255);
+                    height: 3.2rem;
+                    width: 20rem;
+                    box-shadow: rgb(255, 255, 255);
+                    font-size: 1em;
+                }
+            }
+            .client-image{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                width: 100%;
+                img{
+                    transform: scale(0.8);
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+
+            @media (max-width: $breakpoint-tablet){
+                flex-direction: column;
+                .client-description{
+                    align-items: center;
+                    align-content: center;
+                    h3{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+    }
+    
+    .image-carousel{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                display: flex;
+                list-style: none;
+                img{
+                    transform: scale(0.8);
+                }
+            }
+        }
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+
+        @media (max-width: 1400px){
+            display: none;
+        }
+    }
+    .image-carousel-small{
+        @media (min-width: 1400px) {
+            display: none;
+        }
+        display: flex;
+        justify-content: center;
+        transform: scale(0.7);
+    }
+
+}

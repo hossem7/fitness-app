@@ -1,0 +1,180 @@
+$breakpoint-mobile: 768px;
+
+$breakpoint-tablet: 1090px;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+.process{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    .live-video{
+        background-color: rgb(123, 34, 40);
+        width:100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        h1{
+            padding-top: 4rem;
+        }
+        
+        img{
+            transform: scale(0.85);
+            width: inherit;
+            height: inherit;
+            padding-left: 5px;
+        }
+       
+    }
+
+    .more-workout{
+        background-color: rgb(123, 34, 40);
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        
+
+        ul{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            li{
+                display: flex;
+                width: inherit;
+                height: inherit;
+                img{
+                    transform: scale(0.8);
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+            
+            @media (max-width: $breakpoint-tablet){
+                flex-direction: column;
+                img{
+                    transform: scale(0.8);
+                }
+            }
+            @media (max-width: $breakpoint-mobile){
+                flex-direction: column;
+                transform: scale(0.8);
+                
+            }
+        }
+    }
+    .why{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        h1{
+            text-align: center;
+        }
+
+        .training-images{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            padding-bottom: 5rem;
+            .imageAndDescription{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                img{
+                    transform: scale(0.7);
+                }
+                
+            }
+            @media (max-width: $breakpoint-tablet) {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+
+    }
+    .promotion{
+        width: 100%;
+        background-color: rgb(123, 34, 40);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem;
+        .promo-text{
+            display: flex;
+            flex-direction: column;
+            padding:5rem;
+            align-items: center;
+            align-content: center;
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 1.4em;
+            }
+        }
+        .promo-image{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding: 5rem;
+        }
+
+        @media (max-width: $breakpoint-tablet) {
+            display: flex;
+            flex-direction: column;
+            .promo-text{
+                width: inherit;
+                height: inherit;
+                padding: 0;
+                padding-bottom: 3rem;
+            }
+            .promo-image{
+                width: inherit;
+                height: inherit;
+            }
+        }
+        @media (max-width: $breakpoint-mobile){
+            display: flex;
+            flex-direction: column;
+            .promo-text{
+                width: inherit;
+                height: inherit;
+                padding: 0;
+                padding-bottom: 3rem;
+            }
+            .promo-image{
+                padding: 0;
+                width: inherit;
+                height: inherit;
+                img{
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+
+}
