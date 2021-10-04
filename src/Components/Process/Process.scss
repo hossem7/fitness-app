@@ -113,7 +113,9 @@ $breakpoint-tablet: 1090px;
             @media (max-width: $breakpoint-tablet) {
                 display: flex;
                 flex-direction: column;
-
+                span{
+                    text-align: center;
+                }
             }
         }
 

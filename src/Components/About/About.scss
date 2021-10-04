@@ -8,10 +8,10 @@ $breakpoint-mobile: 768px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem 0 5rem;
+    padding: 2rem 5rem 2rem 5rem;
 
     .text{
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         height: inherit;

@@ -106,6 +106,7 @@ $breakpoint-tablet: 1024px;
             .client-description{
                 display: flex;
                 flex-direction: column;
+                width: fit-content;
                 h3{
                     font-size: 1.3rem;
                     font-weight: 200;
