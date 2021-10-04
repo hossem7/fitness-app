@@ -62,6 +62,12 @@ $breakpoint-tablet: 1024px;
                     width: 100%;
                     box-shadow: rgb(255, 255, 255);
                     font-size: 1.5em;
+                    transition: 0.4s ease;
+                    &:hover{
+                        background-color: #c57d2a;
+                        opacity: 1;
+                        cursor: pointer;
+                    }
                 }
                 
             }
@@ -86,7 +92,7 @@ $breakpoint-tablet: 1024px;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        
+        padding-top: 3rem;
         .client-div{
             display: flex;
             width: 100%;
@@ -113,6 +119,12 @@ $breakpoint-tablet: 1024px;
                     width: 20rem;
                     box-shadow: rgb(255, 255, 255);
                     font-size: 1em;
+                    transition: 0.4s ease;
+                    &:hover{
+                        background-color: #c57d2a;
+                        opacity: 1;
+                        cursor: pointer;
+                    }
                 }
             }
             .client-image{

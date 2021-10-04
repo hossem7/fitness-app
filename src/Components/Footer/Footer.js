@@ -13,9 +13,9 @@ const Footer = () => {
         <div className="footer">
             <div className="foot-nav">
                 <ul className="navig-links">
-                    <li><Link className="link" activeClass="active" to="About" smooth={true} duration={500}>ABOUT</Link></li>
-                    <li><Link className="link" activeClass="active" to="Process" smooth={true} duration={500}>PROCESS</Link></li>
-                    <li><Link className="link" activeClass="active" to="Shop" smooth={true} duration={500}>SHOP</Link></li>
+                    <li><Link className="link-navig" activeClass="active" to="About" smooth={true} duration={500}>ABOUT</Link></li>
+                    <li><Link className="link-navig" activeClass="active" to="Process" smooth={true} duration={500}>PROCESS</Link></li>
+                    <li><Link className="link-navig" activeClass="active" to="Shop" smooth={true} duration={500}>SHOP</Link></li>
                 </ul>
                 <ul className="social-media-icons">
                     <li><FaFacebookF size='2rem'/></li>

@@ -80,9 +80,11 @@ $breakpoint-tablet: 1090px;
         flex-direction: column;
         align-content: center;
         align-items: center;
+        padding: 5rem 0 5rem 0;
 
         h1{
             text-align: center;
+            padding-bottom: 2rem;
         }
 
         .training-images{
@@ -101,6 +103,10 @@ $breakpoint-tablet: 1090px;
                 align-items: center;
                 img{
                     transform: scale(0.7);
+                }
+                span{
+                    font-size: 1.2em;
+                    font-weight: bold;
                 }
                 
             }

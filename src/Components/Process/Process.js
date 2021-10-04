@@ -21,7 +21,7 @@ const Process = () => {
                 </ul>
             </div>
             <div className="why">
-                <h1>Why Personal Training</h1>
+                <h1>Why Personal Training?</h1>
                 <div className="training-images">
                     <div className="imageAndDescription">
                         <img src={vid3} alt="logo" />

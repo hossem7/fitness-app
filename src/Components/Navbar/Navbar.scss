@@ -16,6 +16,9 @@ $width: 100%;
         justify-content: flex-start;
         text-decoration: none;
         color: white;
+        &:hover{
+            cursor: pointer;
+        }
     }
     .nav-links {
         display: flex;
@@ -30,7 +33,7 @@ $width: 100%;
         font-size: 1.2rem;
     }
     .nav-link:hover {
-        color: red;
+        color: rgb(123, 34, 40);
         cursor: pointer;
     }
     
@@ -53,6 +56,12 @@ $width: 100%;
     width: 12rem;
     box-shadow: rgb(255, 255, 255);
     font-size: 1em;
+    transition: 0.4s ease;
+    &:hover{
+        background-color: #c57d2a;
+        opacity: 1;
+        cursor: pointer;
+    }
 }
 .nav-icon{
     display: none;
@@ -86,6 +95,7 @@ $width: 100%;
 		top: 120px;
 		left: -100%;
 		transition: 0.5s all;
+        
 	}
     .nav-links.active {
 		background: rgb(44, 43, 43);

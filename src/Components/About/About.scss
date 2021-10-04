@@ -32,6 +32,12 @@ $breakpoint-mobile: 768px;
             width: 15rem;
             box-shadow: rgb(255, 255, 255);
             font-size: 1em;
+            transition: 0.4s ease;
+            &:hover{
+                background-color: #c57d2a;
+                opacity: 1;
+                cursor: pointer;
+            }
         }
     }
     .image{
