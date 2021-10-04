@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 This project was styled using Sass.\
+The application is full-responsive across every device.\
 Live Deployment: https://fitness-app-atreo.herokuapp.com/
 
 ## Available Scripts
