@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Fitness Web Application for Atreo Media Interview
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was styled using Sass.
+Live Deployment: https://fitness-app-atreo.herokuapp.com/
 
 ## Available Scripts
 
